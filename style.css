@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:ital@1&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  background-color: #696969;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.container{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.589),rgba(0, 0, 0, 0.589)), url(img/bg.jpg);
+  height: 669px;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom:solid white ;
+}
+
+.navbar-container{
+  padding: 20px;
+}
+
+#navbar-logo {
+  font-size: 30px;
+  text-decoration: none;
+  margin: 10px;
+  color: #DBDBDB;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.navbar {
+  display: inline-block;
+  width: calc(99% - 260px);
+  text-align: right;
+}
+
+.navbar-items {
+  list-style: none;
+}
+
+.navbar-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #DBDBDB;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.5s;
+  padding-bottom: 5px;
+}
+
+.navbar-item:last-child{ /* ! Last-child navbar-item classındaki son class seçiyor ( son çocuk ) */
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .navbar-item{
+    display: none;  
+  }
+  .navbar-item:last-child{
+    display: block;
+  }
+
+  .responsive .navbar-item{
+    display:  block;
+    text-align: left;
+    margin: 16px 0;
+  }
+
+  .responsive .navbar-item:last-child{
+    position: absolute;
+    right: 40px;
+    top: 6px;
+  }
+  .responsive .navbar{
+    display: block;
+  }
+
+  .responsive .container-write h1{
+    margin: 0;
+  }
+  
+}
+
+.container-write{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.container-write h1{
+  font-size: 65px;
+  margin-top: 170px;
+  user-select: none;
+}
+
+.container-write p{
+  font-size: 20px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.navbar-items a:hover{
+  border-bottom: solid white 1px;
+  transition: 0.5s;
+  padding-bottom: 5px;
+}
+
+.selected-hakkımda{
+  user-select: none;
+  text-align: center;
+}
+
+.selected-hakkımda a{
+  color: black;
+  font-size: 1px;
+  display: inline;
+}
+
+
+.main-hakkımda{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.589),rgba(0, 0, 0, 0.589)), url(img/hakkımda.jpg);
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: solid white;
+}
+
+
+.user{
+ display: flex;
+ justify-content: center; /* Aga burda dive flex verdik sonra centerladık  çokomelli*/
+ margin-top: 50px;
+}
+
+.user img{
+  width: 150px;
+  box-shadow: 0 0 50px white;
+}
+
+.user-yazı h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+
+
+.hakkımda-bilgiler{
+  text-align: center;
+}
+
+.hakkımda-first__p{
+  margin-top: 50px;
+}
+
+
+.hakkımda-bilgiler__yazı p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.hakkımda-bilgiler__yazı-two{
+  float: left;
+  display: block;
+  text-align: center;
+  position: relative;
+    margin: auto;
+}
+
+.hakkımda-bilgiler__yazı-two p{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
+  font-weight: bold;
+  color: white;
+  right: 1px;
+}
+
+.selected-iletisim{
+  text-align: center;
+  user-select: none;
+  color: black;
+}
+
+.selected-iletisim a{
+  display: inline;
+  font-size: 1px;
+}
+
+.footer{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.500),rgba(0, 0, 0, 0.500)), url(img/iletisim.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.footer-write h1{
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.iletisim-form{
+  margin: auto;
+  width: 250px;
+}
+
+.iletisim-form input{
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: black solid 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  opacity: 0.4;
+}
+
+.iletisim-form #button{
+ display: inline-block;
+ position: absolute;
+ margin-left: 60px;
+}
+
+.iletisim-form #explanation{
+  padding: 70px 60px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: black solid 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  opacity: 0.4;
+  resize: none;
+
+}
+
+.iletisim-form input:not([type="button"]):focus,
+.iletisim-form #explanation:focus{
+  background-color: black;
+  color: white;
+}
+
+
+.iletisim-form #explanation{
+  text-align: center;
+}
+
+@media (min-width: 500px) { 
+  .user img{
+    margin-top: 5px;
+  }
+};
+
+
+@media (min-width: 700px) { 
+  .user img{
+    margin-top: 5px;
+  }
+};
+ 
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { };
+ 
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .user img{
+    margin-top: 50px
+  }
+ };
+ 
+
+ @media (min-width: 1115px) { 
+  .user img{
+    margin-top: 100px;
+  }
+ }
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+};
+
+@media (max-width: 1440px) { 
+  .container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589),rgba(0, 0, 0, 0.589)), url(img/bg.jpg);
+    height: 10px;
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom:solid white ;
+  }
+};
